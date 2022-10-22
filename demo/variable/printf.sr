@@ -1,0 +1,25 @@
+import stdio.h
+func int main (void)
+	// "変換指定子"
+	// char  整数型（文字型) %c
+	// int   整数型 %d
+	// float 浮動小数点数型（単精度実数）%f
+	// double 浮動小数点数型（倍精度実数）%f
+	printf "標準出力の書式\n"
+	printf "Hello,World!\n"
+	// 文字型
+	char text
+	in text = 'A'
+	printf "こんにちは、%c\n",text
+	// 整数型
+	int a,b,c
+	in a = 1
+	in b = 2
+	in c = 3
+	printf "%d、%d、%d、です。\n",a,a+b,c
+	// 浮動小数点数型（単精度実数)
+	float x
+	in x = 33.333
+	printf "%f\n",x
+	retu 0
+END

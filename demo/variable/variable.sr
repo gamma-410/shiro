@@ -1,0 +1,12 @@
+import stdio.h
+func int main (void)
+	char a
+	int b
+	float c
+	double d
+	in a = "A"
+	in b = 22
+	in c = 33.33
+	in d = 44.44
+	retu 0
+END

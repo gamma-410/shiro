@@ -1,0 +1,12 @@
+import stdio.h
+func int main (void)
+	int i
+	var int sum = 0
+	for i=0;i<=100;i++
+	{
+		printf "%d\n",i
+		calc sum+=i
+	}
+	printf "\n合計=%d\n",sum
+	retu 0
+END
