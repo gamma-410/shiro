@@ -6,8 +6,57 @@ inp = ""
 out = ""
 INPUT = []
 OUTPUT = []
-RW = ['import', 'printf', 'var', '//', 'func', '{', '}', 'retu']
-PY = [['#include <', 1, '>'], ['printf (', 1, ')', ';'], [1, ' ', 2, ' = ', 4, ';'], ['// ', 1], [1, ' ', 2, ' ', 3, ' ', 4, "{"], ['{'], ['}'], ['return ', 1, ';', '\n', '}']]
+RW = [  'import', 
+        'printf', 
+        'var',
+        '//',
+        'func',
+        '{',
+        '}', 
+        'retu', 
+        'getchar', 
+        'char', 
+        'int', 
+        'float', 
+        'double', 
+        'in',
+        'scanf',
+        'if',
+        'else',
+        'elif',
+        'for',
+        'calc',
+        'continue',
+        'break',
+        'clang'     
+]
+
+PY = [
+        ['#include <', 1, '>'],
+        ['printf (', 1, ')', ';'],
+        [1, ' ', 2, ' = ', 4, 5, 6, ';'], 
+        ['// ', 1], 
+        [1, ' ', 2, ' ', 3, ' ', 4, "{"], 
+        ['{'],
+        ['}'],
+        ['return ', 1, ';', '\n', '}'],
+        ['getchar', 1, ';'], 
+        ['char ', 1, ';'],  
+        ['int ', 1, ';'], 
+        ['float ', 1, ';'], 
+        ['double ', 1, ';'], 
+        [1, ' = ', 3, ';'],
+        ['scanf (', 1, ', ', 2, ')', ';'],
+        ['if (', 1, ')'],
+        ['else'],
+        ['else if (', 1, ')'],
+        ['for (', 1, ')'],
+        [1, ';'],
+        ['continue;'],
+        ['break;'],
+        [1]
+]
+
 args = sys.argv
 
 openName = args[1]
@@ -37,7 +86,6 @@ for i in INPUT:
         out = ""
 
 
-# トランスパイルした結果を出力
 for i in OUTPUT:
     for j in i:
         file = open(makeFile, mode='a')
