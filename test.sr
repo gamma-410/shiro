@@ -1,0 +1,7 @@
+import stdio.h
+func int main (void)
+	var int a = 10
+	printf "Hello,World!\n"
+	printf "%d\n",a
+	retu 0
+END
