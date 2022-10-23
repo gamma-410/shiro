@@ -1,4 +1,10 @@
 # 文法
+### はじめに。
+shiro では、空白がとても重要です。  
+文字列などで空白を使用してはいけません。  
+関係式等でも <code>, </code>などの空白を許容しません。  
+うまく動作しない場合は、一度確認してみましょう。  
+<br>
 shiro の基本型
 ```c
 import stdio.h
@@ -58,9 +64,9 @@ func int main (void)
 END
 ```
 
-## if文・条件分岐
-shiro には switch文がありません。  
-if 文だけを使用することで誰もが同じようなソースになり、読み書きが楽になります。
+## if else 文・条件分岐
+if else 文 と switch 文 があります。
+- if else 
 ```go
 import stdio.h
 func int main (void)
@@ -82,22 +88,43 @@ func int main (void)
 	retu 0
 END
 ```
+- switch 
 ```go
 import stdio.h
 func int main (void)
 	int a
-	printf "数値を入力してください="
+	printf "数値を入力してください。>>>"
 	scanf "%d" &a
-	if a>=10&&a<=20
+	switch a
 	{
-		printf "入力した数値は,'10以上','20以下'です。\n"
+		case 0
+			printf "0だよ。\n"
+			break
+		case 1
+			printf "1だよ。\n"
+			break
+		case 2
+			printf "2だよ。\n"
+			break
+		case 3
+			printf "3だよ。\n"
+			break
+		case 4
+			printf "4だよ。\n"
+			break
+		case 5
+			printf "5だよ。\n"
+			break
+		default
+			printf "それ以外だよ。"
+			break
 	}
 	retu 0
 END
 ```
-## for文・繰り返し処理
-shiro には while文がありません。  
-for 文だけを使用することで誰もが同じようなソースになり、読み書きが楽になります。
+## for 文・繰り返し処理
+for 文 と while 文 があります。
+- for
 ```go
 import stdio.h
 func int main (void)
@@ -112,7 +139,7 @@ func int main (void)
 	retu 0
 END
 ```
-- continue;
+- for (continue;)
 ```go
 import stdio.h
 func int main (void)
@@ -132,7 +159,7 @@ func int main (void)
 	retu 0
 END
 ```
-- break;
+- for (break;)
 ```go
 import stdio.h
 func int main (void)
@@ -148,4 +175,38 @@ func int main (void)
 	retu 0
 END
 ```
-
+- while (shiro では loop と言います。)  
+POINT: 式を書く時はいつでも <code>calc</code> を使用します。
+```go
+import stdio.h
+func int main (void)
+	var int i = 1
+	var int sum = 0
+	loop sum<100
+	{
+		calc sum=sum+i
+		printf "(i,sum)=(%d,%d)",i,sum
+		calc i=i+1
+	} 
+	retu 0
+END
+```
+## おまけ 
+### rand 関数 を使ってみよう。
+```go
+import stdio.h
+import stdlib.h
+func int main (void)
+	int i
+	printf "◆3つの乱数を生成\n"
+	for i=0;i<3;i++
+	{
+		printf "%dつ目の乱数=%d\n",i+1,rand()
+	}
+	// 乱数の最大値を表示
+	in i = RAND_MAX
+	printf "\n◆乱数の最大値を表示\n"
+	printf "RAND_MAX=%d\n",i
+	retu 0
+END
+```

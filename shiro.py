@@ -26,7 +26,10 @@ RW = [  'import',
         'calc',
         'continue',
         'break',
-        'clang'     
+        'switch',
+        'case',
+        'default',
+        'loop'
 ]
 
 PY = [
@@ -52,7 +55,10 @@ PY = [
         [1, ';'],
         ['continue;'],
         ['break;'],
-        [1]
+        ['switch (', 1, ')'],
+        ['case ', 1, ':'],
+        ['default:'],
+        ['while (', 1, ')']
 ]
 
 args = sys.argv

@@ -1,0 +1,12 @@
+import stdio.h
+func int main (void)
+	var int i = 1
+	var int sum = 0
+	loop sum<100
+	{
+		calc sum=sum+i
+		printf "(i,sum)=(%d,%d)",i,sum
+		calc i=i+1
+	} 
+	retu 0
+END
