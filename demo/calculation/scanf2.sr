@@ -1,5 +1,5 @@
 import stdio.h
-func int main (void)
+func int main void
   // 変数の定義
   int x,y,z
   // xの数値を入力

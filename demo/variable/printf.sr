@@ -1,5 +1,5 @@
 import stdio.h
-func int main (void)
+func int main void
 	// "変換指定子"
 	// char  整数型（文字型) %c
 	// int   整数型 %d

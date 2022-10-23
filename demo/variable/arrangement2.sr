@@ -1,5 +1,5 @@
 import stdio.h
-func int main (void)
+func int main void
 	int kuku[9][9]
 	// 九九の計算 (いちのだん)
 	in kuku[0][0] = 1*1

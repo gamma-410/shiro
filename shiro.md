@@ -8,7 +8,7 @@ shiro では、空白がとても重要です。
 shiro の基本型
 ```c
 import stdio.h
-func int main (void)
+func int main void
 END
 ```
 ## 型・変数
@@ -20,7 +20,7 @@ shiro の型
 
 ```c
 import stdio.h
-func int main (void)
+func int main void
 	char a
 	int b
 	float c
@@ -41,7 +41,7 @@ var int i = 50
 - 四則演算
 ```go
 import stdio.h
-func int main (void)
+func int main void
 	printf "1+2=%d\n",1+2
 	printf "4-3=%d\n",4-3
 	printf "5*6=%d\n",5*6
@@ -55,7 +55,7 @@ POINT: 空白を作ってはいけません。
 - scanf で入力を取ることができます。
 ```go
 import stdio.h
-func int main (void)
+func int main void
 	int x
 	printf "x="
 	scanf "%d" &x
@@ -69,7 +69,7 @@ if else 文 と switch 文 があります。
 - if else 
 ```go
 import stdio.h
-func int main (void)
+func int main void
 	int a
 	printf "数値を入力してください="
 	scanf "%d" &a
@@ -91,7 +91,7 @@ END
 - switch 
 ```go
 import stdio.h
-func int main (void)
+func int main void
 	int a
 	printf "数値を入力してください。>>>"
 	scanf "%d" &a
@@ -127,7 +127,7 @@ for 文 と while 文 があります。
 - for
 ```go
 import stdio.h
-func int main (void)
+func int main void
 	int i
 	var int sum = 0
 	for i=0;i<=100;i++
@@ -142,7 +142,7 @@ END
 - for (continue;)
 ```go
 import stdio.h
-func int main (void)
+func int main void
 	int i
 	for i=0;i<10;i++
 	{
@@ -162,7 +162,7 @@ END
 - for (break;)
 ```go
 import stdio.h
-func int main (void)
+func int main void
 	int i
 	for i=0;i<10;i++
 	{
@@ -179,7 +179,7 @@ END
 POINT: 式を書く時はいつでも <code>calc</code> を使用します。
 ```go
 import stdio.h
-func int main (void)
+func int main void
 	var int i = 1
 	var int sum = 0
 	loop sum<100
@@ -196,7 +196,7 @@ END
 ```go
 import stdio.h
 import stdlib.h
-func int main (void)
+func int main void
 	int i
 	printf "◆3つの乱数を生成\n"
 	for i=0;i<3;i++

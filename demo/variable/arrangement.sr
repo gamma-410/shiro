@@ -1,5 +1,5 @@
 import stdio.h
-func int main (void)
+func int main void
 	int sosu[4]
 	in sosu[0] = 2
 	in sosu[1] = 3

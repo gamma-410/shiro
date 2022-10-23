@@ -1,6 +1,6 @@
 import stdio.h
 import stdlib.h
-func int main (void)
+func int main void
 	int i
 	printf "◆3つの乱数を生成\n"
 	for i=0;i<3;i++
