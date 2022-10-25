@@ -191,6 +191,20 @@ func int main void
 	retu 0
 END
 ```
+## 関数の返り値
+retu ではなく return を使います。  
+区別に注意しましょう。
+```go
+return a + b;
+```
+
+## 関数を呼び出す
+call + 関数()  
+空白は許容しません。
+```go
+call hello();
+```
+
 ## おまけ 
 ### rand 関数 を使ってみよう。
 ```go

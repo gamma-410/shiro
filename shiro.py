@@ -5,6 +5,7 @@ out = ""
 INPUT = []
 OUTPUT = []
 RW = ['import',
+      'from',
       'printf',
       'var',
       '//',
@@ -29,11 +30,14 @@ RW = ['import',
       'switch',
       'case',
       'default',
-      'loop'
+      'loop',
+      'return',
+      'call'
       ]
 
 PY = [
     ['#include <', 1, '>'],
+    ['#include ', 1],
     ['printf (', 1, ')', ';'],
     [1, ' ', 2, ' = ', 4, 5, 6, 7, 8, 9, 10, 11,
         12, 13, 14, 15, 16, 17, 18, 19, 20, ';'],
@@ -60,7 +64,9 @@ PY = [
     ['switch (', 1, ')'],
     ['case ', 1, ':'],
     ['default:'],
-    ['while (', 1, ')']
+    ['while (', 1, ')'],
+    ['return', 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, ';'],
+    [1]
 ]
 
 args = sys.argv
